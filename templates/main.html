@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/img/logo-white.png" alt="Logo" class="logo">
+                <ul class="main-nav">
+                    <li><a href="main.html">Home</a> </li>
+                    {# Changed from projects.html to python_projects.html                   #}
+                    <li><a href="{% url 'python_projects' %}">Projects</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Automated <br> Reports</a></li>
+                                <li><a href="#">Interactive <br> Dashboard</a></li>
+                                <li><a href="#">Administrative <br> Contributions</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">References</a> </li>
+                    <li><a href="#">Contact Info</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-txt-box">
+            <h1>Jason Tyson <br> Backend Developer</h1>
+            <a class="btn btn-resume" href="#">Resume</a>
+            <a class="btn btn-github" href="#">Github Repository</a>
+        </div>
+    </header>
+
+</body>
+</html>
