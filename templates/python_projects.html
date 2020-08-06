@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'vendors/css/grid.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'resources/css/style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Title</title>
@@ -33,7 +34,7 @@
 
             <div class="row">
                 <div class="col span-1-of-3">
-                    <object type="image/svg+xml" data="resources/img/medical/medical%20clipboard.svg" class="project-logo"></object> <br>
+                    <object type="image/svg+xml" data="{% static 'resources/img/medical/medical%20clipboard.svg' %}" class="project-logo"></object> <br>
                 <h3>Placeholder 2</h3>
                 <p>
                     I do a lot of material testing at work, and the software packages I used were not cutting it. I couldn't trust the results they gave me, so I was manually checking each frequency band for every recording, and this took hours. I couldn't find an existing Python program to do what I wanted, so I cobbled together something that automates most of this process, and now the testing is at least 10x faster.
@@ -41,7 +42,7 @@
                 </div>
 
                 <div class="col span-1-of-3">
-                    <object type="image/svg+xml" data="resources/img/medical/medical%20document.svg" class="project-logo"></object> <br>
+                    <object type="image/svg+xml" data="{% static 'resources/img/medical/medical%20document.svg' %}" class="project-logo"></object> <br>
                 <h3>Placeholder 3</h3>
                 <p>
                     I do a lot of material testing at work, and the software packages I used were not cutting it. I couldn't trust the results they gave me, so I was manually checking each frequency band for every recording, and this took hours. I couldn't find an existing Python program to do what I wanted, so I cobbled together something that automates most of this process, and now the testing is at least 10x faster.
@@ -49,7 +50,7 @@
                 </div>
 
                 <div class="col span-1-of-3">
-                    <object type="image/svg+xml" data="resources/img/medical/medical%20equipment.svg" class="project-logo"></object> <br>
+                    <object type="image/svg+xml" data="{% static 'resources/img/medical/medical%20equipment.svg' %}" class="project-logo"></object> <br>
                 <h3>Placeholder 4</h3>
                 <p>
                     I do a lot of material testing at work, and the software packages I used were not cutting it. I couldn't trust the results they gave me, so I was manually checking each frequency band for every recording, and this took hours. I couldn't find an existing Python program to do what I wanted, so I cobbled together something that automates most of this process, and now the testing is at least 10x faster.
