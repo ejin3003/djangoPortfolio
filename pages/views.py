@@ -27,14 +27,14 @@ def python_projects(request):
     py_project_2 = Project()
     py_project_2.name = "Productivity Dashboard"
     py_project_2.client = "Massachusetts General Hospital"
-    py_project_2.icon = ""
+    py_project_2.icon = "medical hospital.svg"
     py_project_2.desc = ""
     py_project_2.gallery = ""
 
     py_project_3 = Project()
     py_project_3.name = "Timekeeping Dashboard"
     py_project_3.client = "Self"
-    py_project_3.icon = ""
+    py_project_3.icon = "medical doctor.svg"
     py_project_3.desc = ""
     py_project_3.gallery = ""
 
@@ -59,6 +59,6 @@ def python_projects(request):
     py_project_6.desc = ""
     py_project_6.gallery = ""
 
-    py_projects = [py_project_1, py_project_2, py_project_3, py_project_4, py_project_5, py_project_6]
+    py_projects = [py_project_1, py_project_2, py_project_3]
 
     return render(request, 'python_projects.html', {"py_projects": py_projects})

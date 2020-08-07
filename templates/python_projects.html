@@ -1,4 +1,5 @@
 {% load static %}
+{% static "resources/img/medical" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,31 +34,15 @@
             </div>
 
             <div class="row">
+                {% for project in py_projects %}
                 <div class="col span-1-of-3">
-                    <object type="image/svg+xml" data="{% static 'resources/img/medical/medical%20clipboard.svg' %}" class="project-logo"></object> <br>
-                <h3>{{ py_project_1.name }}</h3>
+                    <object type="image/svg+xml" data="{{ baseUrl }}/{{ project.icon }}" class="project-logo"></object> <br>
+                <h3>{{ project.name }}</h3>
                 <p>
                     I do a lot of material testing at work, and the software packages I used were not cutting it. I couldn't trust the results they gave me, so I was manually checking each frequency band for every recording, and this took hours. I couldn't find an existing Python program to do what I wanted, so I cobbled together something that automates most of this process, and now the testing is at least 10x faster.
                 </p>
                 </div>
-
-                <div class="col span-1-of-3">
-                    <object type="image/svg+xml" data="{% static 'resources/img/medical/medical%20document.svg' %}" class="project-logo"></object> <br>
-                <h3>{{ py_project_2.name }}</h3>
-                <p>
-                    I do a lot of material testing at work, and the software packages I used were not cutting it. I couldn't trust the results they gave me, so I was manually checking each frequency band for every recording, and this took hours. I couldn't find an existing Python program to do what I wanted, so I cobbled together something that automates most of this process, and now the testing is at least 10x faster.
-                </p>
-                </div>
-
-                <div class="col span-1-of-3">
-                    <object type="image/svg+xml" data="{% static 'resources/img/medical/medical%20equipment.svg' %}" class="project-logo"></object> <br>
-                <h3>{{ py_project_3.name }}</h3>
-                <p>
-                    I do a lot of material testing at work, and the software packages I used were not cutting it. I couldn't trust the results they gave me, so I was manually checking each frequency band for every recording, and this took hours. I couldn't find an existing Python program to do what I wanted, so I cobbled together something that automates most of this process, and now the testing is at least 10x faster.
-                </p>
-                </div>
-
-
+                {% endfor %}
             </div>
 
 
