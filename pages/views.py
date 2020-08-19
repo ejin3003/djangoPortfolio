@@ -20,7 +20,7 @@ def python_projects(request):
     py_project_1 = Project()
     py_project_1.name = "Automated Reports"
     py_project_1.client = "Massachusetts General Hospital"
-    py_project_1.icon = "medical scalpel.svg"
+    py_project_1.icon = "medical document.svg"
     py_project_1.desc = ""
     py_project_1.gallery = ""
 
@@ -34,7 +34,7 @@ def python_projects(request):
     py_project_3 = Project()
     py_project_3.name = "Timekeeping Dashboard"
     py_project_3.client = "Self"
-    py_project_3.icon = "medical doctor.svg"
+    py_project_3.icon = "medical hospital.svg"
     py_project_3.desc = ""
     py_project_3.gallery = ""
 
