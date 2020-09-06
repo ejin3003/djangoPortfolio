@@ -13,14 +13,35 @@
 <body>
 
     <header class="projects">
+{#        <nav>#}
+{#            <div class="row">#}
+{#                <img src="resources/img/logo-white.png" alt="Logo" class="logo">#}
+{#                <ul class="projects-nav">#}
+{#                    <li><a href="{% url 'main' %}">Home</a> </li>#}
+{#                    <li><a href="python_projects.html">Projects</a> </li>#}
+{#                    <li><a href="#">References</a> </li>#}
+{#                    <li><a href="#">Contact Info</a> </li>#}
+{#                </ul>#}
+{#            </div>#}
+{#        </nav>#}
         <nav>
             <div class="row">
-                <img src="resources/img/logo-white.png" alt="Logo" class="logo">
+{#                <img src="resources/img/logo-white.png" alt="Logo" class="logo">#}
                 <ul class="projects-nav">
                     <li><a href="{% url 'main' %}">Home</a> </li>
-                    <li><a href="python_projects.html">Projects</a> </li>
-                    <li><a href="#">References</a> </li>
-                    <li><a href="#">Contact Info</a> </li>
+                    {# Changed from projects.html to python_projects.html                   #}
+
+                    <li><a href="#">ABOUT</a> </li>
+                    <li><a href="#">Projects</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="{% url 'python_projects' %}">Python</a></li>
+                                <li><a href="#">Filemaker</a></li>
+                                <li><a href="#">Administrative</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">CONTACT</a> </li>
                 </ul>
             </div>
         </nav>

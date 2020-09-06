@@ -13,21 +13,22 @@
     <header>
         <nav>
             <div class="row">
-                <img src="resources/img/logo-white.png" alt="Logo" class="logo">
+{#                <img src="resources/img/logo-white.png" alt="Logo" class="logo">#}
                 <ul class="main-nav">
-                    <li><a href="main.html">Home</a> </li>
+                    <li><a href="{% url 'main' %}">Home</a> </li>
                     {# Changed from projects.html to python_projects.html                   #}
-                    <li><a href="{% url 'python_projects' %}">Projects</a>
+
+                    <li><a href="#">ABOUT</a> </li>
+                    <li><a href="#">Projects</a>
                         <div class="sub-menu-1">
                             <ul>
-                                <li><a href="#">Automated <br> Reports</a></li>
-                                <li><a href="#">Interactive <br> Dashboard</a></li>
-                                <li><a href="#">Administrative <br> Contributions</a></li>
+                                <li><a href="{% url 'python_projects' %}">Python</a></li>
+                                <li><a href="#">Filemaker</a></li>
+                                <li><a href="#">Administrative</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="#">References</a> </li>
-                    <li><a href="#">Contact Info</a> </li>
+                    <li><a href="#">CONTACT</a> </li>
                 </ul>
             </div>
         </nav>
