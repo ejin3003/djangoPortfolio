@@ -131,11 +131,17 @@ header {
     margin-top: 20px;
 }
 
-.main-nav {
+/* -------------------------------------------------- */
+/* Navigation Bar: HOME, ABOUT, Projects, Contact */
+/* -------------------------------------------------- */
+
+.main-nav,
+.projects-nav{
     float: right;
     list-style: none;
 }
-.main-nav li {
+.main-nav li,
+.projects-nav li {
     display: inline-flex;
     margin-left: 40px;
     margin-top: 20px;
@@ -144,6 +150,14 @@ header {
 .main-nav li a:link,
 .main-nav li a:visited {
     color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+}
+.projects-nav li a:link,
+.projects-nav li a:visited {
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 90%;
@@ -159,19 +173,31 @@ header {
     font-size: 120%;
     transition: font-size 0.2s;
 }
+.projects-nav li a:hover,
+.projects-nav li a:active {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    font-size: 120%;
+    transition: font-size 0.2s;
+}
+
 
 .sub-menu-1 {
     display: None;
 }
 
-.main-nav li:hover .sub-menu-1 {
+.main-nav li:hover .sub-menu-1,
+.projects-nav li:hover .sub-menu-1 {
     display: block;
     position: absolute;
     margin-top: 15px;
     margin-left: -15px;
 }
 
-.main-nav li:hover .sub-menu-1 ul li {
+.main-nav li:hover .sub-menu-1 ul li,
+.projects-nav li:hover .sub-menu-1 ul li {
     display: block;
     margin: 20px;
 }
@@ -198,34 +224,7 @@ header.projects {
 }
 
 
-.projects-nav {
-    float: right;
-    list-style: none;
-}
-.projects-nav li {
-    display: inline-block;
-    margin-left: 40px;
-    margin-top: 20px;
-}
 
-.projects-nav li a:link,
-.projects-nav li a:visited {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%;
-    border-bottom: 2px solid transparent;
-}
-
-.projects-nav li a:hover,
-.projects-nav li a:active {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-bottom: 2px solid black;
-    font-size: 120%;
-    transition: font-size 0.2s;
-}
 .section-features {
     color: black;
 }

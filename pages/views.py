@@ -22,7 +22,7 @@ def python_projects(request):
     py_project_1.client = "Massachusetts General Hospital"
     py_project_1.icon = "medical document.svg"
     py_project_1.desc = ""
-    py_project_1.gallery = ""
+    py_project_1.gallery = "xs_Morg_Blood.jpg"
 
     py_project_2 = Project()
     py_project_2.name = "Productivity Dashboard"
