@@ -4,6 +4,9 @@ from django.shortcuts import render
 from django.shortcuts import render
 from .models import Profile, Project
 from django.http import HttpResponse
+"""
+Add class based views
+"""
 
 
 def main(request):
@@ -12,7 +15,7 @@ def main(request):
     profile_1.name = 'Jason Tyson'
     profile_1.job = 'Backend Developer'
 
-    return render(request, 'main.html', {'profile_1': profile_1})
+    return render(request, 'templates/main.html', {'profile_1': profile_1})
 
 
 def python_projects(request):
@@ -61,4 +64,4 @@ def python_projects(request):
 
     py_projects = [py_project_1, py_project_2, py_project_3]
 
-    return render(request, 'python_projects.html', {"py_projects": py_projects})
+    return render(request, 'templates/python_projects.html', {"py_projects": py_projects})
