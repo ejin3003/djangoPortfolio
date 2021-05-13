@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'djangoPortfolio.portfolio.apps.MainpageConfig',
+    'frontend.apps.MainpageConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'djangoPortfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'portfolio/templates')]
+        'DIRS': [os.path.join(BASE_DIR, '../frontend/templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {

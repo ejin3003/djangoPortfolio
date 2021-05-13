@@ -1,4 +1,3 @@
-from django.shortcuts import render
 
 # Create your views here.
 from django.shortcuts import render
@@ -10,12 +9,11 @@ Add class based views
 
 
 def main(request):
-
     profile_1 = Profile()
     profile_1.name = 'Jason Tyson'
     profile_1.job = 'Backend Developer'
-
-    return render(request, 'templates/main.html', {'profile_1': profile_1})
+    context = {'profile_1': profile_1}
+    return render(request, 'frontend/main.html', context)
 
 
 def python_projects(request):
@@ -64,4 +62,4 @@ def python_projects(request):
 
     py_projects = [py_project_1, py_project_2, py_project_3]
 
-    return render(request, 'templates/python_projects.html', {"py_projects": py_projects})
+    return render(request, 'frontend/python_projects.html', {"py_projects": py_projects})
